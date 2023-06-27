@@ -1,5 +1,8 @@
+import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Paper } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = ({movies}) => {
@@ -18,6 +21,14 @@ const Hero = ({movies}) => {
                                             </div>
                                             <div className='movie-title'>
                                                 <h4>{movie.title}</h4>
+                                            </div>
+                                            <div className="movie-buttons-container">
+                                                <Link to={`/Trailer/${movie.trailerLink.substring(movie.trailerLink.length - 11)}`}>
+                                                <div className="play-buitton-icon-container">
+                                                    <FontAwesomeIcon className="play-button-icon"
+                                                        icon={faCirclePlay} />
+                                                </div>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
