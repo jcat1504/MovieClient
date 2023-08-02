@@ -21,7 +21,7 @@ function App() {
     try
     {
       // const response = await api.get("/api/v1/movies");
-      const response = await api.get("https://movie-gold-v2.onrender.com/api/v1/movies");
+      const response = await api.get("https://movie-gold-v2.onrender.com/");
 
       setMovies(response.data);
 
