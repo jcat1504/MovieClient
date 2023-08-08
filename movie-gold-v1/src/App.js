@@ -3,10 +3,10 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import api from './api/axiosConfig';
 import Layout from './components/Layout';
+import Reviews from './components/ReviewsPage/Reviews';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import NotFound from './components/notFound/NotFound';
-import Reviews from './components/reviews/Reviews';
 import Trailer from './components/trailer/Trailer';
 
 
