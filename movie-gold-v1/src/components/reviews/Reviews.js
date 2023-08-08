@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import api from '../../api/axiosConfig';
-import ReviewForm from '../reviewForm/ReviewForm';
+import ReviewForm from '../ReviewForm/ReviewForm';
 
 import React from 'react';
 
