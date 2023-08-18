@@ -21,7 +21,7 @@ function App() {
     try
     {
       // const response = await api.get("/api/v1/movies");
-      const response = await api.get("https://movie-gold-v2.onrender.com/api/v1/movies");
+      const response = await api.get("http://ec2-35-173-131-206.compute-1.amazonaws.com:8080/api/v1/movies");
 
       setMovies(response.data);
 
@@ -37,7 +37,7 @@ function App() {
     try 
     {
         //  const response = await api.get(`/api/v1/movies/${movieId}`);
-         const response = await api.get(`https://movie-gold-v2.onrender.com/api/v1/movies/${movieId}`);
+         const response = await api.get(`http://ec2-35-173-131-206.compute-1.amazonaws.com:8080/api/v1/movies/${movieId}`);
 
         const singleMovie = response.data;
 
